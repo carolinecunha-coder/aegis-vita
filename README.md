@@ -92,7 +92,6 @@ Resposta:
 api.py
 main.py
 database.py
-aegis_vita.db
 ```
 
 ---
