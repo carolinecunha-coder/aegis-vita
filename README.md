@@ -1,23 +1,24 @@
-# aegis-vita
-# 🛡️ Aegis Vita - Simulador de Seguro de Vida
+# 🛡️ Aegis Vita — Simulador de Seguro de Vida
 
-Projeto desenvolvido para simulação de prêmios de seguro com base em idade, capital segurado e tipo de cobertura.
+![Aegis Vita Banner](./banner.png)
+
+Projeto desenvolvido para simulação de prêmios de seguro de vida com base em **idade**, **capital segurado** e **tipo de cobertura**, utilizando um modelo de risco com crescimento exponencial.
 
 ---
 
 ## 🎯 Objetivo
 
-Simular o cálculo de prêmios de seguros de vida, permitindo análise de risco e comportamento do custo ao longo da idade.
+Simular o cálculo de prêmios de seguros de vida, permitindo a análise do comportamento do custo ao longo do tempo e apoio na tomada de decisão financeira.
 
 ---
 
 ## ⚙️ Funcionalidades
 
-* ✔ Simulação de prêmio (morte natural e acidental)
-* ✔ API com FastAPI
-* ✔ Persistência de dados com SQLite
-* ✔ Geração de gráficos com Matplotlib
-* ✔ Exportação para Excel
+✔ Simulação de prêmio (morte natural e acidental)  
+✔ API REST com FastAPI  
+✔ Persistência de dados com SQLite  
+✔ Geração de gráficos com Matplotlib  
+✔ Exportação de dados para Excel  
 
 ---
 
@@ -25,20 +26,26 @@ Simular o cálculo de prêmios de seguros de vida, permitindo análise de risco 
 
 O cálculo do prêmio considera:
 
-* Idade do cliente
-* Capital segurado
-* Tipo de cobertura
-* Crescimento exponencial do risco com a idade
+- Idade do cliente  
+- Capital segurado  
+- Tipo de cobertura  
+- Crescimento exponencial do risco com a idade  
+
+📌 Fórmula aplicada:
+
+```
+premio = capital × fator × e^(k × (idade - 18)) × (1 + margem)
+```
 
 ---
 
 ## 🛠️ Tecnologias
 
-* Python
-* FastAPI
-* Pandas
-* Matplotlib
-* SQLite
+- Python  
+- FastAPI  
+- Pandas  
+- Matplotlib  
+- SQLite  
 
 ---
 
@@ -49,13 +56,17 @@ pip install -r requirements.txt
 uvicorn api:app --reload
 ```
 
+Acesse a documentação automática em:
+
+👉 http://127.0.0.1:8000/docs
+
 ---
 
 ## 🌐 Endpoint da API
 
-### POST /calcular
+### POST `/calcular`
 
-Exemplo de requisição:
+### Exemplo de requisição:
 
 ```json
 {
@@ -65,7 +76,7 @@ Exemplo de requisição:
 }
 ```
 
-Resposta:
+### Resposta:
 
 ```json
 {
@@ -80,24 +91,25 @@ Resposta:
 
 ## 📊 Insights
 
-* O prêmio cresce exponencialmente com a idade
-* Cobertura natural possui maior custo que acidental
-* O capital segurado impacta diretamente o valor final
+- O prêmio cresce exponencialmente com a idade  
+- Cobertura natural possui maior custo que acidental  
+- O capital segurado impacta diretamente o valor final  
 
 ---
 
 ## 📁 Estrutura do projeto
 
 ```
-api.py
-main.py
-database.py
+api.py        # API FastAPI
+main.py       # Simulação e gráficos
+database.py   # Persistência SQLite
 ```
 
 ---
 
 ## 👩‍💻 Autora
 
-Caroline Cunha
-Especialista em Investimentos | Inteligência de Mercado | Seguros de Vida
+**Caroline Cunha**  
+Especialista em Investimentos | Inteligência de Mercado | Seguros de Vida  
 Em transição para Data Analytics
+
