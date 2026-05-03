@@ -1,5 +1,4 @@
 # 🛡️ Aegis Vita — Simulador de Seguro de Vida
-<<<<<<< HEAD
 
 ![Aegis Vita Banner](./banner.png)
 
@@ -113,8 +112,6 @@ database.py   # Persistência SQLite
 **Caroline Cunha**  
 Especialista em Investimentos | Inteligência de Mercado | Seguros de Vida  
 Em transição para Data Analytics
-=======
->>>>>>> 033172f4878e176bd57fb78b17c0cfed10b7f7ec
 
 ![Aegis Vita Banner](./banner.png)
 
