@@ -58,7 +58,7 @@ uvicorn api:app --reload
 
 Acesse a documentação automática em:
 
-👉 http://127.0.0.1:8000/docs
+👉 https://aegis-vita.onrender.com/docs
 
 ---
 
